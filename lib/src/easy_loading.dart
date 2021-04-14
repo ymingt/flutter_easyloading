@@ -456,7 +456,7 @@ class EasyLoading {
     toastPosition ??= EasyLoadingToastPosition.center;
     bool animation = _w == null;
     _progressKey = null;
-    if (_key != null) await dismiss(animation: false);
+    if (_key != null) dismiss(animation: false);
 
     Completer<void> completer = Completer<void>();
     _key = GlobalKey<EasyLoadingContainerState>();
